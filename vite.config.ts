@@ -9,6 +9,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'packages/index.ts'),
       name: 'MaysUI',
+      fileName: (format) => `maysui.${format}.ts`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

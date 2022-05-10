@@ -1,6 +1,6 @@
 {
   "name": "maysui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "files": [
     "dist"
@@ -29,7 +29,7 @@
     "preview": "vite preview",
     "init": "cd dist && pnpm init -y",
     "login": "pnpm login",
-    "publish": "pnpm publish"
+    "publish": "cd dist && pnpm publish --no-git-checks"
   },
   "dependencies": {
     "@types/node": "^17.0.31",
